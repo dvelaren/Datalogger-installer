@@ -1,6 +1,6 @@
 //I/O pin labeling
 #define SENSORPIN 0
-#define ACTUATORPIN 13
+#define ACTUATORPIN 5
 
 //Constant definitions
 const unsigned int NUMREADS = 12;  //Samples to average for smoothing
@@ -44,4 +44,3 @@ void loop() {
     Serial.println(val);
   }
 }
-

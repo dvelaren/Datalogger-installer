@@ -1,2 +1,19 @@
 # Datalogger-installer
 Datalogger application installer, which allows to establish a serial communication with Arduino. This application sends a desired setpoint to Arduino and it reads the Measured signal from Arduino into the application. It plots setpoint and measurement and allows to export the data that was acquired during the execution. Windows, Linux and Mac installers are available.
+
+## Example: A light control system with feedback
+![alt text](https://raw.githubusercontent.com/tidusdavid/Datalogger-installer/master/Resources/Architecture.png)
+![alt text](https://raw.githubusercontent.com/tidusdavid/Datalogger-installer/master/Resources/Device.jpg)
+
+This example allows to implement a PID Light Controller using Arduino, Matlab, Datalogger App, LDR Sensor and Power LED Hardware.
+
+In order to test this project follow the next steps:
+1. First install Datalogger application.
+2. Upload Arduino codes/arduinoMatlab/arduinoMatlab.ino to Arduino UNO and edit code header to match the current pins of the device (LDR is connected to A0, Power LED is connected to PWM 5).
+3. Open Datalogger application.
+4. Select COM port where Arduino UNO is connected.
+5. Click on Start button.
+6. Put a 512 Setpoint value.
+7. Verify that Power LED turns on to 50% aprox of brightness and that Datalogger app shows the LDR measurement in the plot.
+8. Click on Stop.
+9. Click on Export and check that Dataset is accurate according to what you monitored in Datalogger app.
