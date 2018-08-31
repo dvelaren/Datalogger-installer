@@ -38,7 +38,7 @@ void loop() {
   if (Serial.available() > 0) {
     readBuffer = Serial.readStringUntil('\n');
     sp = readBuffer.toInt();
-    readBuffer = "";    
+    readBuffer = "";
     Serial.flush();
     analogWrite(ACTUATORPIN, sp * 255.0 / 1023.0);
     Serial.println(val);
