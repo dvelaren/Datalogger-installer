@@ -8,11 +8,11 @@
 
 //I/O pin labeling
 #define LDR 0
-#define LPWM 13
+#define LPWM 2
 
 //Constant definitions
 const unsigned int NUMREADS = 12;  //Samples to average for smoothing
-double consKp = 0.032, consKi = 3.2, consKd = 0.0016; //Controller constants
+double consKp = 0, consKi = 8, consKd = 0; //Controller constants
 
 //Variable definitions
 double sp = 0, y = 0, out = 0; //System Variables
@@ -62,4 +62,3 @@ void loop() {
   myPID.Compute();
   analogWrite(LPWM, out);
 }
-

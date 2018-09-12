@@ -9,7 +9,7 @@ This example allows to implement a PID Light Controller using Arduino, Matlab, D
 
 In order to test this project follow the next steps:
 1. First install Datalogger application.
-2. Upload Arduino codes/arduinoMatlab/arduinoMatlab.ino to Arduino UNO and edit code header to match the current pins of the device (LDR is connected to A0, Power LED is connected to PWM 5).
+2. Upload Arduino codes/arduinoMatlab/arduinoMatlab.ino to Arduino MEGA and edit code header to match the current pins of the device (LDR is connected to A0, Power LED is connected to PWM 2).
 3. Open Datalogger application.
 4. Select COM port where Arduino UNO is connected.
 5. Click on Start button.
@@ -17,3 +17,7 @@ In order to test this project follow the next steps:
 7. Verify that Power LED turns on to 50% aprox of brightness and that Datalogger app shows the LDR measurement in the plot.
 8. Click on Stop.
 9. Click on Export and check that Dataset is accurate according to what you monitored in Datalogger app.
+10. Using Matlab, the previous dataset and System Identification Toolbox (ident), acquire a first order plus dead time model for the system (FOPDT)
+11. Tune a PID controller using PID Tune toolbox.
+12. Upload Arduino codes/arduinoMatlabCtrl/arduinoMatlabCtrl.ino to Arduino MEGA and edit code header to match current pins of device (LDR is connected to A0, Power LED is connected to PWM 2) and also edit the control constants kp, ki and kd.
+13. Test that the controller adapts depending on context situations.

@@ -1,6 +1,6 @@
 //I/O pin labeling
 #define SENSORPIN 0
-#define ACTUATORPIN 5
+#define ACTUATORPIN 2
 
 //Constant definitions
 const unsigned int NUMREADS = 12;  //Samples to average for smoothing
