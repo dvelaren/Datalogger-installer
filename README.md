@@ -3,7 +3,6 @@ Datalogger application installer, which allows to establish a serial communicati
 
 ## Example: A light control system with feedback
 ![alt text](https://raw.githubusercontent.com/tidusdavid/Datalogger-installer/master/Resources/Architecture.png)
-![alt text](https://raw.githubusercontent.com/tidusdavid/Datalogger-installer/master/Resources/Device.jpg)
 
 This example allows to implement a PID Light Controller using Arduino, Matlab, Datalogger App, LDR Sensor and Power LED Hardware.
 
